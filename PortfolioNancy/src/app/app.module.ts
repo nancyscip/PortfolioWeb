@@ -12,7 +12,7 @@ import { ExperienciaComponent } from './components/experiencia/experiencia.compo
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { HardysoftComponent } from './components/hardysoft/hardysoft.component';
-
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -29,13 +29,13 @@ import { HardysoftComponent } from './components/hardysoft/hardysoft.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgCircleProgressModule.forRoot({})
+    NgCircleProgressModule.forRoot({}),
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-
 
     
 
